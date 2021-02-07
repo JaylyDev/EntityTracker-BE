@@ -1,0 +1,40 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Created by Aliom",
+        "name": "Distance addon",
+        "uuid": "78f6e570-e0f4-4f3b-a6b8-6182244fb28c",
+        "version": [ 0, 0, 1 ],
+        "min_engine_version": [ 1, 16, 0 ]
+    },
+    "modules": [
+        {
+            "description": "",
+            "type": "data",
+            "uuid": "4753dbb7-175f-46ab-b67b-b892224a5200",
+            "version": [0, 0, 1]
+        }
+    ],
+    "subpacks": [
+        {
+          "folder_name": "16",
+          "name": "§6Radius Distance: 16 Chunks",
+          "memory_tier": 1
+        },
+        {
+          "folder_name": "32",
+          "name": "§6Radius Distance: 32 Chunks",
+          "memory_tier": 2
+        },
+        {
+          "folder_name": "48",
+          "name": "§6Radius Distance: 48 Chunks",
+          "memory_tier": 3
+        },
+        {
+          "folder_name": "64",
+          "name": "§6Radius Distance: 64 Chunks",
+          "memory_tier": 4
+        }
+      ]
+}
