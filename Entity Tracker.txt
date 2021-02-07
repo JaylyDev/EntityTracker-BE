@@ -1,0 +1,35 @@
+Create an Add-On
+Title: Entity Tracker [v1.0]
+
+Brief Introduction:
+The title says it all. This Add-On is able to track the distance between an entity of mob or player within a 64 chunks radius in a Minecraft world in Minecraft: Bedrock Edition.
+
+Description:
+How does it work?
+The Entity Tracker Add-On have the capaility to track an entity during its tracking by running the command /tag @[player / entity] add track to activate the tracker.
+The tracker can display the distance between the player position and the position of the entity that is being tracked, and display the result in actionbar every in-game tick until you removed the tag "track" from the target.
+If you decide to tag yourself as a target, feel free to try our developing function by punching a block "Allow" which you can get that block by typing /give @s allow. (This feature is still in development, we're hoping to add this feature to every mob possible)
+
+The disadvantage of the addon:
+Due to Minecraft: Bedrock Edition has its own limit, if you set the Add-On can have the capaility to track really high distance, the world ticks per second might start decreasing and this issue is depend on the host's device.
+
+We have tried fixing this issue as we could. Therefore if you find out the world's ticks per second start decreasing due to this addon, what you should do is:
+1. Join our discord server
+2. File a bug report of the Add-On on our discord server
+3. If you're reporting a bug about low tps, please provide as much detail you had as much as possible, including:
+- Your device specification (e.g. Androld - 1GB Memory (Check via internet), iOS - 1GB Memory (Check via internet) or Windows 10 - i5-1135G7 (CPU), 8GB Ram and Nvidia GeForce RTX 3070 (GPU) (Check via Task manager in your computer.))
+- The world tps it was running (You may place a repeating command block to add a value of 1, set it to always active and "Delay in ticks" to 0 , mark a record of how many in-game ticks it run in a real-life second (18-20tps is what normal condition of Minecraft world should have, any lower than this and you will begin to see lag.))
+- The Radius Distance you were playing affect the world's tps (Check in Add-On's setting)
+- Additional infomation you may want us to know
+
+We also listen to every report we have received, and hopefully try our best to fix it.
+
+Installation:
+
+Supported Minecraft Version: 1.16.101
+
+Installation description (optional):
+1. Download the addon through mediafire
+2. Import the Add-On to Minecraft: Bedrock Edition
+3. Apply the behavior pack to your Minecraft world
+4. Change the radius distance on the behavior pack setting if you wanted to
