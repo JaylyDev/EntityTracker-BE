@@ -1,0 +1,49 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.walk": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"walking": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/function distance"
+					]
+				},
+				"walking": {
+					"transitions": [
+						{
+							"default": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/function distance"
+					]
+				}
+			}
+		},
+		"controller.animation.item_use": {
+			"states": {
+				"default_state": {
+					"transitions": [
+						{
+							"target_me": "query.get_equipped_item_name('main_hand') == 'allow' && variable.attack_time > 0.0"
+						},
+						{
+							"remove_target": "query.get_equipped_item_name('main_hand') == 'deny' && variable.attack_time > 0.0"
+						}
+					]
+				},
+				"target_me": {
+					"transitions": [{ "default_state": "(1.0)"	}],	"on_entry": [ "/function ingame/1" ]
+				},
+				"remove_target": { 
+					"transitions": [{ "default_state": "(1.0)"	}], "on_entry": [ "/function ingame/0" ]
+				}
+			}
+		}
+	}
+}
